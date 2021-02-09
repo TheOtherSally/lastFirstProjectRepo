@@ -4,42 +4,78 @@
         <title>
             Sally's Google Page Project
         </title>
+        <link href="https://fonts.adobe.com/fonts/proxima-nova?mv=affiliate&mv2=red#fonts-section"
+        rel="stylesheet" type="text/css">
+
         <style>
-            p {
-                font: google-sans;
+           
+            body {
+                display: grid;
+                width: 910px;
+                height: 654px;
+               
+                .about { grid-area: about;}
+                .store {grid-area: store;}
+                .gmail {grid-area: gmail;}
+                .images {grid-area: images;}
+                .logo {grid-area: logo;}
+                .searchbox {grid-area: searchbox;}
+                .search {grid-area: search;}
+                .lucky {grid-area: lucky;}
+                .advert {grid-area: advert;}
+                .buss {grid-area: buss;}
+                .how {grid-area: how;}
+                .neutral {grid-area: neutral;}
+                .privacy {grid-area: privacy;}
+                .terms {grid-area: terms;}
+                .gap-50{grid-row-gap: 50px;}
+
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+
+                justify-items: center;
+                align-items: bottom;
+               
+                
+                font-family: Proxima_Nova;
+                
+                footer {
+                    background-color: lightgray;
+                }
             }
+          
         </style>
     </head>
     <body>
         <div class="topbanner">
             <p scope="row">
-                <a href="about.google.com">About</a>
-                <a href="store.google.com/us">Store</a>
-                <a href="mail.google.com/mail/u/o/#inbox">Gmail</a>
-                <a href="google.com/imghp?hl=en&ogbl">Images</a>
+                <a href="about.google.com" class="about">About</a>
+                <a href="store.google.com/us" class="store">Store</a>
+                <a href="mail.google.com/mail/u/o/#inbox" class="gmail">Gmail</a>
+                <a href="google.com/imghp?hl=en&ogbl" class="images">Images</a>
             </p>
         </div>
 
         <div>
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         </div>
-        <div id="search box" scope="row">
+        <div id="searchbox" scope="row">
             <input type="text">
         </div>    
-        <div id="searchluckbuttons" scope="row">
-            <button type="button">Search</button>
-            <button type="button">I'm feeling lucky</button>
+        <div class="searchluckbuttons" scope="row">
+            <button type="button" class="search">Search</button>
+            <button type="button" class="lucky">I'm feeling lucky</button>
         </div>
         <div id="emptyspace" class="gap-50">
         </div>
         <footer scope="row">
             <p>
-            <a href="ads.google.com" id="advertising">Advertising</a>
-            <a href="smallbusiness.with.google.com" id="business">Business</a>
-            <a href="google.com/search/howsearchworks/?fg=1" id="howsearchworks">How Search works</a>
-            <a href="sustainability.google.commitments" id="carbonneutral">Carbon Neutral since 2007</a>
-            <a href="policies.google.com/privacy" id="privacy">Privacy</a>
-            <a href="polocies.google.com/terms" id="terms">Terms</a>
+            <a href="ads.google.com" class="advert">Advertising</a>
+            <a href="smallbusiness.with.google.com" class="buss">Business</a>
+            <a href="google.com/search/howsearchworks/?fg=1" class="how">How Search works</a>
+            <a href="sustainability.google.commitments" class="neutral">Carbon Neutral since 2007</a>
+            <a href="policies.google.com/privacy" class="privacy">Privacy</a>
+            <a href="polocies.google.com/terms" class="terms">Terms</a>
             </p>
         </footer>
   
